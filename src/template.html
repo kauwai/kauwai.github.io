@@ -1,14 +1,3 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobidev/simplefolio/
-  Readme: https://github.com/cobidev/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
--->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,13 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
-
-    <!-- Put here your site title -->
-    <title>[Your name here] | Developer</title>
-    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
-    <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+   
+    <title>Kauwai Lucchesi | Developer</title>    
+    <meta name="keywords" content="kauwai, javascript, react, code" />    
+    <meta name="description" content="Kauwai Lucchesi | Developer" />
 
     <!-- Required librarys -->
     <link
@@ -37,18 +23,17 @@
     <!-- Remove this script once you setup your custom portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
-
-  <!-- Follow the HTML instructions to create your stunning portfolio website -->
+  
   <body>
+    
     <div id="top"></div>
-
     <!-- **** Hero Section **** -->
     <div id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hello there, my name is <span class="text-color-main">Kauwai</span>
           <br />
-          I'm the Unknown Developer.
+          I'm a Full Stack Developer.
         </h1>
         <p class="hero-cta" class="load-hidden">
           <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
@@ -68,9 +53,10 @@
             <div class="about-wrapper__image">
               <img
                 class="img-fluid rounded shadow-lg"
+                style='border-radius: 50% !important;'
                 height="auto"
                 width="300px"
-                src="./assets/profile.jpg"
+                src="https://avatars.githubusercontent.com/u/53876126?v=4"
                 alt="Profile Image"
               />
             </div>
@@ -78,22 +64,23 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Excepturi neque, ipsa animi maiores repellendu distinctioaperiam
-                earum dolor voluptatum consequatur blanditiis inventore debitis
-                fuga numquam voluptate architecto itaque molestiae.
+                I'm a professional always eager to learn new technologies and to
+            embrace the novelties we're surrounded by in this ever-changing
+            world.
               </p>
               <p class="about-wrapper__info-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Excepturi neque, ipsa animi maiores repellendu distinctioaperiam
-                earum dolor voluptatum consequatur blanditiis inventore debitis
-                fuga numquam voluptate architecto itaque molestiae.
+                Besides having a degree in International Relations, my thirst for
+            making things made it clear to me that I had to become a developer!
+              </p>
+              <p class="about-wrapper__info-text">
+                I also love problem-solving, and I found in coding a clever way to
+            do this passion of mine.
               </p>
               <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="#!">
+                <a id="resume-button" class="cta-btn cta-btn--resume">
                   View Resume
-                </a>
-              </span>
+                </a>                
+              </span>              
             </div>
           </div>
         </div>
@@ -101,41 +88,51 @@
     </section>
     <!-- /END About Section -->
 
+     <!-- **** Modal Section **** -->
+    <div id="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <embed id="embeded-pdf" src="./assets/curriculum.pdf">
+      </div>                
+    </div>
+    <!-- /END Modal Section -->
+
     <!-- **** Projects Section **** -->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">
-            Projects
+            previous projects
           </h2>
 
           <!-- Each .row is a project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <h3 class="project-wrapper__text-title">Face Recognition App</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    This is web app allows users to submit images and detect faces
+                    within the provided image via an API call. 
+                  <br/>
+                    Other functionalities: register, log in and ranking systems.
+                    <br/>
+                    Theses features are persisted through a PostgreSQL Database.                    
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://kauwai.github.io/face-recognition-app/">
                   See Live
                 </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/kauwai/face-recognition-app">
                   Source Code
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a href="https://kauwai.github.io/face-recognition-app/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
+                    <img class="img-fluid" src="./assets/faceapp.gif" />
                   </div>
                 </a>
               </div>
@@ -147,29 +144,31 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <h3 class="project-wrapper__text-title">Robofriends - Redux</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    This web application was created using Redux
+                    and it is designed as a fictional social website.
+                    <br/>
+                    It has users generated through API calls, displayed
+                    when the page loads. 
+                    <br/>Also includes a searchbar functionality
+                    that filters results as the user types.
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://kauwai.github.io/robofriends-redux/">
                   See Live
                 </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/kauwai/robofriends-redux">
                   Source Code
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a href="https://kauwai.github.io/robofriends-redux/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
+                    <img class="img-fluid" src="./assets/robofriends-redux.gif" />
                   </div>
                 </a>
               </div>
@@ -181,29 +180,31 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <h3 class="project-wrapper__text-title">Personal Finances App</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    This is project consists of an application to control personal expenditures
+                    and income, and it's organized by year, month and day.
+                    <br/>
+                    The backend was created using Express, and it allows CRUD opperations,
+                    and the data is persisted through MongoDB.
+                    <br/>
+                     The project website is written in Brazilian Portuguese.
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://kauwai-igti-desafio-final.herokuapp.com/">
                   See Live
                 </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/kauwai/personal-finances-app">
                   Source Code
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a href="https://kauwai-igti-desafio-final.herokuapp.com/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
+                    <img class="img-fluid" src="./assets/personal-finances.gif" />
                   </div>
                 </a>
               </div>
@@ -223,13 +224,13 @@
         </h2>
         <div class="contact-wrapper">
           <p class="contact-wrapper__text">
-            [Put your call to action here]
+            You can send me an e-mail.
           </p>
           <a
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="mailto:kauwainobre@outlook.com"
+            >Send</a
           >
         </div>
       </div>
@@ -242,17 +243,11 @@
         <a href="#top" class="back-to-top">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
-        <div class="social-links">
-          <a href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
-            <i class="fa fa-codepen fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
+        <div class="social-links">          
+          <a href="https://www.linkedin.com/in/kauwailucchesi/" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a href="#!" target="_blank">
+          <a href="https://github.com/kauwai" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
@@ -261,33 +256,22 @@
 
         <!-- If you give me some credit, will be huge for me :) -->
         <p class="footer__text">
-          © 2020 - Template developed by <a href="https://github.com/cobidev" target="_blank">Jacobo Martínez</a>
-          </a>
-        </p>
-
-        <!-- Remove this paragraph once you setup your custom portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobidev/simplefolio on GitHub"
-            >Star</a
-          >
-        </p>
+          © 2021 - Template developed by <a target="_blank" href="https://github.com/cobidev">cobidev</a>, powered by Kauwai Lucchesi
+        </p>        
       </div>
     </footer>
     <!-- /END Footer Section -->
+    <script>
+      const modal = document.getElementById('modal');
+      const resumeButton = document.getElementById('resume-button');
+      const closeModal = document.getElementById('close-modal');
+      resumeButton.addEventListener('click', () => modal.style.display = 'block')
+      closeModal.addEventListener('click', () => modal.style.display = 'none');
+      window.addEventListener('click', ({target}) => {
+        if(target == modal) {
+          modal.style.display = 'none'
+        }        
+      });
+    </script>
   </body>
 </html>
